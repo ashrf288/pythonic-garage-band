@@ -31,9 +31,12 @@ class Drummer(Guitarist):
             return (f'My name is {self.name} and I play drums')
        def __repr__(self):
             return (f'Drummer instance. Name = {self.name}')
-
+       def get_instrument(self):
+          return 'drums'
 class Bassist(Guitarist):
        def __str__(self):
             return (f'My name is {self.name} and I play bass')
        def __repr__(self):
             return (f'Bassist instance. Name = {self.name}')
+       def get_instrument(self):
+          return 'bass'
