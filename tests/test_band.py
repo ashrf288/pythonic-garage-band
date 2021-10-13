@@ -4,7 +4,7 @@ from pythonic_garage_band.band import (
     Band,
     # Musician,
     Guitarist,
-    # Bassist,
+    Bassist,
     Drummer,
 )
 
@@ -41,7 +41,7 @@ def test_drummer_repr():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_bassist_str():
     meshell = Bassist("Meshell Ndegeocello")
     actual = str(meshell)
@@ -49,7 +49,7 @@ def test_bassist_str():
     assert actual == expected
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_bassist_repr():
     meshell = Bassist("Meshell Ndegeocello")
     actual = repr(meshell)
