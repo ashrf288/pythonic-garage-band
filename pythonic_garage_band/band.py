@@ -2,10 +2,10 @@
 
 
 class Band:
-   member=[]
+  
    def __init__(self,name,members  ):
          self.name =name 
-       
+         self.members=members
 
 
    def play_solos(self):
@@ -29,6 +29,7 @@ class Drummer(Guitarist):
             return (f'My name is {self.name} and I play drums')
        def __repr__(self):
             return (f'Drummer instance. Name = {self.name}')
+
 class Bassist(Guitarist):
        def __str__(self):
             return (f'My name is {self.name} and I play bass')
