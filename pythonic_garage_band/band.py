@@ -47,7 +47,7 @@ class Guitarist :
             return (f'Guitarist instance. Name = {self.name}')
       def get_instrument(self):
           return 'guitar'
-      def play_solos (self):
+      def play_solo (self):
           return 'face melting guitar solo'
 
 class Drummer(Guitarist):
@@ -57,7 +57,7 @@ class Drummer(Guitarist):
             return (f'Drummer instance. Name = {self.name}')
        def get_instrument(self):
           return 'drums'
-       def play_solos (self):
+       def play_solo (self):
           return 'rattle boom crash'
 
  
@@ -68,7 +68,7 @@ class Bassist(Guitarist):
             return (f'Bassist instance. Name = {self.name}')
        def get_instrument(self):
           return 'bass'
-       def play_solos (self):
+       def play_solo (self):
           return 'bom bom buh bom'
 
 
