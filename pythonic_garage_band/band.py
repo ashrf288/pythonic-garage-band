@@ -1,30 +1,44 @@
 
-from abc import abstractclassmethod
-
-class Band:
-   '''
-      this class has (name and member )
-      member is an array which we add to it every band member once we creat new object
-      (calls init fun) 
-   '''
-   members=[]
-   def __init__(self,name,memberName):
-         self.name =name 
-         Band.members.append(memberName)
 
 
-   def play_solos(self):
-    print("Hello my name is " + self.name)
+class Musician:
+    def __init__(self, name):
+        self.name = name
 
-    
-   def to_list(self):
-    print("Hello my name is " + self.name)
-   
+    def __str__(self):
+        pass
 
+    def __repr__(self):
+        pass
 
- 
+    def get_instrument(self):
+        pass
 
-class Guitarist:
+    def play_solo(self):
+        pass
+class Band(Musician):
+    instances = []
+
+    def __init__(self, name, members):
+        self.name = name
+        self.members = members
+        Band.instances.append(self)
+    def play_solos(self):
+        solos_member = []
+        for member in self.members:
+            solos_member.append(member.play_solo())
+        return solos_member
+
+    def __str__(self):
+        return f" band {self.name}"
+
+    def __repr__(self):
+       return f"{self.name}"
+    @classmethod
+    def to_list(cls):
+        return cls.instances
+
+class Guitarist :
       def __init__ (self,name):
             self.name=name
       def __str__(self):
@@ -57,30 +71,6 @@ class Bassist(Guitarist):
        def play_solos (self):
           return 'bom bom buh bom'
 
-
-class Musician:
-    members = []
-
-    def init(self, name):
-
-        self.name = name
-        Musician.members.append(self)
-
-    @abstractclassmethod
-    def str(self):
-        pass
-
-    @abstractclassmethod
-    def repr(self):
-        pass
-
-    @abstractclassmethod
-    def get_instrument(self):
-        pass
-
-    @abstractclassmethod
-    def play_solo(self):
-        pass
 
 
 
