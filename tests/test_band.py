@@ -2,7 +2,7 @@ import pytest
 
 from pythonic_garage_band.band import (
     Band,
-    # Musician,
+    Musician,
     Guitarist,
     Bassist,
     Drummer,
@@ -107,19 +107,19 @@ def test_individual_solos(one_band):
 
 # def test_band_members(one_band):
 
-#     assert len(one_band.members) == 3
+    assert len(one_band.members) == 3
 
-#     assert isinstance(one_band.members[0], Musician)
-#     assert isinstance(one_band.members[0], Guitarist)
-#     assert one_band.members[0].name == "Kurt Cobain"
+    assert isinstance(one_band.members[0], Musician)
+    assert isinstance(one_band.members[0], Guitarist)
+    assert one_band.members[0].name == "Kurt Cobain"
 
-#     assert isinstance(one_band.members[1], Musician)
-#     assert isinstance(one_band.members[1], Bassist)
-#     assert one_band.members[1].name == "Krist Novoselic"
+    assert isinstance(one_band.members[1], Musician)
+    assert isinstance(one_band.members[1], Bassist)
+    assert one_band.members[1].name == "Krist Novoselic"
 
-#     assert isinstance(one_band.members[2], Musician)
-#     assert isinstance(one_band.members[2], Drummer)
-#     assert one_band.members[2].name == "Dave Grohl"
+    assert isinstance(one_band.members[2], Musician)
+    assert isinstance(one_band.members[2], Drummer)
+    assert one_band.members[2].name == "Dave Grohl"
 
 
 # # @pytest.mark.skip("todo")

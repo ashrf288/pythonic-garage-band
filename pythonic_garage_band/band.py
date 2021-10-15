@@ -38,7 +38,7 @@ class Band(Musician):
     def to_list(cls):
         return cls.instances
 
-class Guitarist :
+class Guitarist (Musician):
       def __init__ (self,name):
             self.name=name
       def __str__(self):
@@ -50,7 +50,7 @@ class Guitarist :
       def play_solo (self):
           return 'face melting guitar solo'
 
-class Drummer(Guitarist):
+class Drummer(Musician):
        def __str__(self):
             return (f'My name is {self.name} and I play drums')
        def __repr__(self):
@@ -61,7 +61,7 @@ class Drummer(Guitarist):
           return 'rattle boom crash'
 
  
-class Bassist(Guitarist):
+class Bassist(Musician):
        def __str__(self):
             return (f'My name is {self.name} and I play bass')
        def __repr__(self):
