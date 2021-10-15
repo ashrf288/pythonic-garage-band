@@ -2,6 +2,11 @@
 
 
 class Musician:
+    '''
+         this is the super class of all other classes
+         with 4 methods and the constructer
+
+    '''
     def __init__(self, name):
         self.name = name
 
@@ -17,6 +22,10 @@ class Musician:
     def play_solo(self):
         pass
 class Band(Musician):
+    '''
+    this class takes has  1 class mthod and one class variable and 4 methods
+    this class stores all instencies of the muscicain class
+    '''
     instances = []
 
     def __init__(self, name, members):
