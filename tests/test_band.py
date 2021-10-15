@@ -122,13 +122,13 @@ def test_individual_solos(one_band):
     assert one_band.members[2].name == "Dave Grohl"
 
 
-# # @pytest.mark.skip("todo")
-# def test_play_solos_for_whole_band(one_band):
-#     solos = one_band.play_solos()
-#     assert len(solos) == 3
-#     assert solos[0] == "face melting guitar solo"
-#     assert solos[1] == "bom bom buh bom"
-#     assert solos[2] == "rattle boom crash"
+# @pytest.mark.skip("todo")
+def test_play_solos_for_whole_band(one_band):
+    solos = one_band.play_solos()
+    assert len(solos) == 3
+    assert solos[0] == "face melting guitar solo"
+    assert solos[1] == "bom bom buh bom"
+    assert solos[2] == "rattle boom crash"
 
 
 # # @pytest.mark.skip("todo")
